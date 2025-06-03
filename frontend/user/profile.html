@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./find-a-doctor.html">Find a Doctor</a></li>
+          <li><a href="#">Talk to Doctor</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#" id="logout-btn" class="book-appointment">🚪 Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <div class="profile-container">
+      <h2>👤 My Profile</h2>
+      <div class="profile-section">
+        <!-- Profile Image -->
+        <img id="profile-image" src="https://placehold.co/150x150" alt="" />
+        <input type="file" id="imageUpload" accept="image/*" />
+        <label for="imageUpload" class="custom-upload-label">+</label>
+
+        <!-- User Details -->
+        <div id="user-details" class="user-info">
+          <p><strong>Name:</strong> <span id="profile-name"></span></p>
+          <p><strong>Age:</strong> <span id="profile-age"></span></p>
+          <p><strong>Phone:</strong> <span id="profile-phone"></span></p>
+          <p><strong>Email:</strong> <span id="profile-email"></span></p>
+          <p><strong>Gender:</strong> <span id="profile-gender"></span></p>
+        </div>
+      </div>
+
+      <!-- Appointment History -->
+      <div class="appointment-section">
+        <h3>📅 Appointment History</h3>
+        <table class="appointment-table">
+          <thead>
+            <tr>
+              <th>Appointment Type</th>
+              <th>Doctor Name</th>
+              <th>Date</th>
+              <th>Mode</th>
+            </tr>
+          </thead>
+          <tbody id="appointment-table-body">
+            <!-- Filled dynamically by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="profile.js"></script>
+  </body>
+</html>

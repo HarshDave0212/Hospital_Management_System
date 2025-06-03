@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+    <header>
+        <h1>Doctor Dashboard</h1>
+    </header>
+    
+    <section id="appointments">
+        <h2>Pending Appointments</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Confirm</th>
+                </tr>
+            </thead>
+            <tbody id="appointment-list"></tbody>
+        </table>
+    </section>
+    
+    <section id="availability">
+        <h2>Set Availability</h2>
+        <label>Date: <input type="date" id="avail-date"></label>
+        <label>Time: <input type="time" id="avail-time"></label>
+        <button onclick="setAvailability()">Set</button>
+    </section>
+    
+    <section id="chat">
+        <h2>Chat with Patients</h2>
+        <div id="chat-box"></div>
+        <input type="text" id="message" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </section>
+    
+    <script src="doctor.js"></script>
+</body>
+</html>

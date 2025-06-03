@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Check Appointment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./find-a-doctor.html">Find a Doctor</a></li>
+          <li><a href="#">Talk to Doctor</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="profile.html" class="book-appointment">👤 Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- <section class="hero">
+            <h1>Get Yourself Check Now! Book Your Appointment Online.</h1>
+            <button class="book-appointment">Book Appointment</button>
+        </section> -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Get Yourself Checked Now! Book Your Appointment Online.</h1>
+          <button
+            class="book-appointment"
+            onclick="window.location.href='./book-appointment.html'"
+          >
+            Book Appointment
+          </button>
+          <!-- <button class="book-appointment">Check History</button> -->
+        </div>
+        <div class="hero-image">
+          <img src="../images/doctor.png" alt="Doctor" />
+        </div>
+      </section>
+
+      <section class="fitness-tips">
+        <h2>Keep Yourself Fit!</h2>
+        <div class="tip">
+          <img src="../images/balanced-diet-icon.png" alt="Balanced Diet" />
+          <p>
+            <strong>Eat a Balanced Diet</strong><br />Include plenty of fruits,
+            vegetables, whole grains, and lean proteins to maintain overall
+            health.
+          </p>
+        </div>
+        <div class="tip">
+          <img src="../images/exercise-icon.png" alt="Exercise Regularly" />
+          <p>
+            <strong>Exercise Regularly</strong><br />Aim for at least 30 minutes
+            of moderate exercise (like walking or jogging) most days of the
+            week.
+          </p>
+        </div>
+        <div class="tip">
+          <img src="../images/sleep-icon.png" alt="Get Enough Sleep" />
+          <p>
+            <strong>Get Enough Sleep</strong><br />Doctors recommend 7-9 hours
+            of quality sleep each night for proper body function and recovery.
+          </p>
+        </div>
+        <div class="tip">
+          <img src="../images/hydration-icon.jpeg" alt="Stay Hydrated" />
+          <p>
+            <strong>Stay Hydrated</strong><br />Drink at least 8 glasses of
+            water daily to keep your body functioning properly.
+          </p>
+        </div>
+        <div class="tip">
+          <img src="../images/stress-icon.png" alt="Manage Stress" />
+          <p>
+            <strong>Manage Stress</strong><br />Practice relaxation techniques
+            like deep breathing, meditation, or yoga to reduce stress levels.
+          </p>
+        </div>
+        <div class="tip">
+          <img
+            src="../images/smoking-icon.webp"
+            alt="Avoid Smoking & Limit Alcohol"
+          />
+          <p>
+            <strong>Avoid Smoking & Limit Alcohol</strong><br />Quit smoking and
+            reduce alcohol consumption to lower the risk of heart disease and
+            other illnesses.
+          </p>
+        </div>
+        <div class="tip">
+          <img src="../images/checkup-icon.png" alt="Regular Health Checkups" />
+          <p>
+            <strong>Regular Health Checkups</strong><br />Visit your doctor for
+            routine screenings and early detection of potential health issues.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Health Check Appointment</p>
+    </footer>
+    <!-- Floating Chatbot Toggle Button -->
+    <button id="toggleChatbot">💬</button>
+
+    <!-- Chatbot Container -->
+    <div id="chatbotContainer" class="hidden">
+      <div class="chat-header">
+        <h2>MediCare Bot</h2>
+        <button id="closeChatbot">✖</button>
+      </div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chat-input">
+        <input type="text" id="userMessage" placeholder="Type a message..." />
+        <button id="sendMessage">Send</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,692 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #2d3b7f;
+    color: white;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a.book-appointment {
+    background-color: #ff6f61;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section
+.hero {
+    background-color: #00bfff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.hero button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #ff4b39;
+} */
+
+/* Hero Section */
+.hero {
+    background-color: #00bfff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Left Content */
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.hero-content .book-appointment {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.hero-content .book-appointment:hover {
+    background-color: #ff6f61;;
+}
+
+/* Right Image */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content,
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+}
+
+/* Fitness Tips Section */
+.fitness-tips {
+    padding: 2rem;
+    text-align: center;
+}
+
+.fitness-tips h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.tip img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.tip p {
+    max-width: 600px;
+    text-align: left;
+}
+
+.tip strong {
+    font-size: 1.2rem;
+}
+/* Chatbot Icon - Fixed at Bottom Right */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.chatbot-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2d3b7f;
+    color: white;
+}
+.search-doctor {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-doctor input {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-doctor button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.doctor-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.doctor-card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.doctor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .search-doctor input {
+        width: 100%;
+    }
+}
+/* Book Appointment Page Styling */
+.appointment-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d3b7f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+button.submit-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button.submit-btn:hover {
+    background-color: #ff6f61;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .appointment-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
+/* About Us Page Styling */
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-intro h1 {
+    font-size: 2.5rem;
+    color: #2d3b7f;
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Chairperson Section */
+.chairperson-message {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.circular-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2d3b7f;
+}
+
+.text-container {
+    flex: 2;
+}
+
+.text-container h2 {
+    color: #2d3b7f;
+    font-size: 2rem;
+}
+
+.text-container h3 {
+    color: #ff6f61;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Senior Doctors Section */
+.senior-doctors {
+    text-align: center;
+}
+
+.senior-doctors h2 {
+    font-size: 2rem;
+    color: #2d3b7f;
+    margin-bottom: 1.5rem;
+}
+
+.doctor-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.doctor-profile h3 {
+    color: #ff6f61;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.doctor-profile p {
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chairperson-message {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* General Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+/* Floating Chatbot Button */
+#toggleChatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#toggleChatbot:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Chatbot Container */
+#chatbotContainer {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    height: 420px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+}
+
+/* Initially Hidden */
+.hidden {
+    transform: translateY(20px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Chat Header */
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 12px 12px 0 0;
+}
+
+.chat-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Chat Messages */
+.chat-messages {
+    flex-grow: 1;
+    padding: 12px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Chat Bubbles */
+.message {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+/* User Response */
+.user-message {
+    background-color: #007bff;
+    padding: 5px;
+    color: white;
+    align-self: flex-end;
+    border-radius: 10px 10px 0 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* AI Response */
+.ai-message {
+    background-color: #e0e0e0;
+    color: black;
+    align-self: flex-start;
+    border-radius: 10px 10px 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 12px;
+    gap: 8px;
+    background: #fff;
+    border-radius: 0 0 12px 12px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.chat-input button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+}
+#doctorTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#doctorTable th, #doctorTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+#doctorTable th {
+  background-color: #f4f4f4;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ea574a;
+}
+
+/* Profile Container */
+.profile-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Heading */
+.profile-container h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+#profile-image,
+#profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #ff6f61;
+}
+
+/* Upload Input */
+input[type="file"] {
+    display: none;
+}
+
+/* Personal Info Box */
+#user-details {
+    background-color: #f0f4ff;
+    padding: 20px;
+    margin: 0 auto 30px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#user-details p {
+    margin: 8px 0;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+}
+
+/* Appointment Section */
+.appointment-section h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.appointment-table th,
+.appointment-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.appointment-table th {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.appointment-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.custom-upload-label {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px auto;
+    transition: background-color 0.3s;
+}
+
+.custom-upload-label:hover {
+    background-color: #e56256;
+}

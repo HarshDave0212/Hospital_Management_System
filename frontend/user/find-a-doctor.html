@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find a Doctor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./find-a-doctor.html">Find a Doctor</a></li>
+          <li><a href="#">Talk to Doctor</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="profile.html" class="book-appointment">👤 Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="search-doctor">
+        <h2>Find a Doctor</h2>
+        <input type="text" id="searchName" placeholder="Search by Name" />
+        <input
+          type="text"
+          id="searchSpecialization"
+          placeholder="Search by Specialization"
+        />
+        <button onclick="searchDoctors()">Search</button>
+      </section>
+
+      <section class="doctor-list" id="doctorList">
+        <!-- Doctor table will be dynamically inserted here -->
+        <table id="doctorTable">
+          <thead>
+            <tr>
+              <th>Doctor Name</th>
+              <th>Specialty</th>
+              <th>Availability</th>
+              <th>Book Appointment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamic content will be inserted here by JavaScript -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Health Check Appointment</p>
+    </footer>
+
+    <script src="find-a-doctor.js"></script>
+  </body>
+</html>
