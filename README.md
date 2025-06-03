@@ -92,9 +92,6 @@ npm install
 3️⃣ Configure your .env file (if used) with your database credentials.
 
 4️⃣ Run the backend server:
-bash
-Copy
-Edit
 node server.js
 5️⃣ Open public/index.html in your browser to start using the system.
 
