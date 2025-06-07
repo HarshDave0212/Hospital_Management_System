@@ -32,42 +32,79 @@ A full-stack hospital management system built using **HTML, CSS, JavaScript, Nod
 ---
 ## 📁 Project Structure
 hospital-management-system/
+
 ├── config/
+
 │ └── db.js # MySQL connection configuration
+
 ├── middleware/
+
 │ └── auth.js # Auth middleware for protected routes
+
 ├── routes/
+
 │ ├── adminRoutes.js
+
 │ ├── appointmentRoutes.js
+
 │ ├── authRoutes.js
+
 │ ├── protectedRoutes.js
+
 │ └── userRoutes.js
+
 ├── database/
+
 │ └── hospital_management.sql # MySQL schema and tables
+
 ├── frontend/
+
 │ ├── admin/
+
 │ │ ├── admin.html
+
 │ │ ├── admin.css
+
 │ │ └── admin.js
+
 │ ├── doctor/
+
 │ │ ├── doctor.html
+
 │ │ ├── doctor.css
+
 │ │ └── doctor.js
+
 │ ├── images/
+
 │ └── user/
+
 │ ├── index.html
+
 │ ├── signup.html
+
 │ ├── login.html
+
 │ ├── profile.html
+
 │ ├── book-appointment.html
+
 │ ├── find-a-doctor.html
+
 │ ├── about-us.html
+
 │ ├── chatbot.js
+
 │ └── other CSS and JS files
+
 ├── .env # Environment variables
+
 ├── package.json
+
 ├── package-lock.json
+
 ├── server.js # Main server entry point
+
 └── README.md # Project description and guide
 
 ---
@@ -84,30 +121,48 @@ hospital-management-system/
 ## 🚀 How to Run
 
 1️⃣ Clone the repository:
+
 git clone https://github.com/your-username/hospital-management-system.git
+
+
 2️⃣ Install dependencies:
+
 cd hospital-management-system
+
 npm install
 
 3️⃣ Configure your .env file (if used) with your database credentials.
 
 4️⃣ Run the backend server:
+
 node server.js
+
 5️⃣ Open public/index.html in your browser to start using the system.
 
-📌 API Endpoints
+## 📌 API Endpoints
+
 *Appointment APIs*
+
 POST /api/appointments/book — Book a new appointment
+
 GET /api/appointments/patient/:id — Get appointment history for a patient
 
+
 *Doctor APIs*
+
 GET /api/doctors/ — Get all doctors
+
 POST /api/doctors/add — Add a new doctor
+
 DELETE /api/doctors/:id — Delete a doctor
 
+
 *User APIs*
+
 POST /api/users/register — Register a new user
+
 POST /api/users/login — User login
 
-📌 Author
+## 📌 Author
+
 Harsh Dave
